@@ -1,5 +1,5 @@
 # Chatroom
-Implementation of a chatroom
+Implementation of a chatroom using socket programming. There are one server and arbitrary number of clients can join.
 
 Server:(Ubuntu)
 
