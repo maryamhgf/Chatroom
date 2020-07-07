@@ -1,20 +1,24 @@
 # Chatroom
-Implementation of a chatroom using socket programming. There are one server and arbitrary number of clients can join.
+Implementation of a chatroom using socket programming. There is one server which can be connected by an arbitrary number of clients.
 
-Server:(Ubuntu)
+Here is how to run the server and the client on linux machines:
 
-1. Open terminal and type cd "directory of the codes".
+Server:
 
-2. The server will be run in port 9090(you can change it in the code.)
+Open the terminal and cd to the directory of the codes.
 
-3. Type python chat_server.py -sp 9090 in the terminal.
+Run the server by: “python chat_server.py -sp 9090”.
 
-Client:(Ubuntu)
+(The server will be run on port 9090)
 
-1. Open a new terminal and type cd "directory of the codes".
+Client:
 
-2. Type python client.py sip- server-ip sp- 9090 (For example: python client.py sip- 9090 sp- 9090)
+Open another terminal and cd to the directory of the codes.
 
-For every new client open a new terminal and type the previous command.
+Run the client by: “python client.py -sip 127.0.0.1 -sp 9090 .
 
-When a client type a message in the terminal, for all the clients in that chatroom < From Client_ip , Client_port>: Message! will be shown.
+(Connecting to a server running on localhost and port number 9090)
+
+For every new client, open a new terminal and type the previous command.
+
+When a client types a message in the terminal, all the clients in that chatroom will see this message: < From Client_ip , Client_port>: Message!.
